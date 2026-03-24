@@ -1,6 +1,8 @@
-# Arduino-LED-Tetris
+# Tetris on Arduino
 
-A fully playable Tetris game running on an Arduino Uno with a 4x8x8 LED matrix display, analog joystick, LCD screen, and a passive buzzer for sound effects.
+[![Demo Video](https://img.youtube.com/vi/_eHdkO_Wsmk/0.jpg)](https://youtube.com/shorts/_eHdkO_Wsmk)
+
+A fully playable Tetris game running on an Arduino Uno with a 4x8x8 LED matrix display, analog joystick, LCD screen, and a buzzer for sound effects.
 
 ---
 
@@ -27,7 +29,7 @@ A fully playable Tetris game running on an Arduino Uno with a 4x8x8 LED matrix d
 | VCC | 5V |
 | GND | GND |
 
-The 4 matrices daisy chain together; only the first module connects to the Arduino, the rest chain through DOUT → DIN.
+The 4 matrices daisy chain together — only the first module connects to the Arduino, the rest chain through DOUT → DIN.
 
 ### Joystick
 | Joystick | Arduino |
@@ -70,7 +72,7 @@ The 4 matrices daisy chain together; only the first module connects to the Ardui
 - Next piece preview on the top display
 - Score, lines cleared, and high score shown on the LCD
 - High score saved to EEPROM so it persists after power off
-- Line clear animation; completed rows flash before disappearing
+- Line clear animation — completed rows flash before disappearing
 - Sound effects for locking, line clears, soft drop, game over, pause, and startup
 - Pause by holding the joystick up for 2 seconds
 - Game over animation with automatic board reset
